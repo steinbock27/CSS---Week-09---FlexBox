@@ -1,0 +1,136 @@
+.container{
+    height: 750px;
+    width: 1300px;
+    margin: 0 auto;
+    border: solid 1px;
+    background: wheat;
+    display: flex;
+    flex-flow: column;
+}
+
+.border{
+    border: solid 1px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Header Styling*/
+.header{
+    background: rosybrown;
+    flex: 1;
+    display: flex;
+}
+
+.buttons{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons div{
+    height: 35px;
+    width: 100px;
+    background: gainsboro;
+    border: solid 2px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    align-items: center;
+}
+
+.logo >div:first-of-type{
+    border: dashed 2px;
+    margin: 0 30px 0 0;/*Hocam flex-boxish bir yolla logoya margin veremedim.
+    Direk margin'i mincikladim bende. Varsa artistik bir yolu, paylasin lutfen.*/
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*Left Side and Article Styling*/
+.main{
+    flex:12;
+    display: flex;
+}
+
+/*Left Side Styling*/
+.aside{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.nav{
+    background: tomato;
+    width: min-content;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav div:last-child{
+    margin-bottom: 10%;/*Hocam deli oldum. Placeholder image'i justify-self yemiyor.
+    Arastirdim. Guzel bir cevap bulamadim. Ben de bottem'a margin koyup, ornek resme
+    benzetmeye calistim. Ama flex-boxish olmadi. Varsa artistik bir yolu, paylasin
+    lutfen.*/
+}
+
+.radio{
+    background: yellow; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.radio div:first-child{
+    margin-right: 50px;
+}
+
+input[type=submit]{
+    width: 120px;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*Article Styling*/
+.article{
+    background: turquoise;
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;/*Scrool bar*/
+}
+
+.article1{
+    flex: 2;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 1%;
+
+}
+
+.article2{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1%;
+}
+.footer{
+    flex:1;
+    background: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
